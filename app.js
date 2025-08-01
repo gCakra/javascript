@@ -20,15 +20,15 @@
 //  console.log("angka lebih kecil dari lima");
 //}
 
-const hari = prompt("isi hari").toLowerCase();
+// const hari = prompt("isi hari").toLowerCase();
 
-if (hari === "senin") {
-  console.log("selamat bekerja");
-} else if (hari === "sabtu") {
-  console.log("semoga jangan cepat berlalu");
-} else {
-  console.log("biasa saja");
-}
+// if (hari === "senin") {
+//   console.log("selamat bekerja");
+// } else if (hari === "sabtu") {
+//   console.log("semoga jangan cepat berlalu");
+// } else {
+//   console.log("biasa saja");
+// }
 
 // const nilai = "80";
 
@@ -43,3 +43,15 @@ if (hari === "senin") {
 // } else {
 //   console.log("Nilai A");
 // }
+
+const password = prompt("buat password");
+
+if (password.length >= 6) {
+  if (password.indexOf(' ') === -1) {
+    console.log('password valid');
+  }else {
+    console.log('password tidak boleh mengandung spasi');
+  }
+}else {
+  console.log('password kurang dari 6');
+}
