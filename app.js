@@ -44,14 +44,28 @@
 //   console.log("Nilai A");
 // }
 
-const password = prompt("buat password");
+// const password = prompt("buat password");
 
-if (password.length >= 6) {
-  if (password.indexOf(' ') === -1) {
-    console.log('password valid');
-  }else {
-    console.log('password tidak boleh mengandung spasi');
-  }
+// if (password.length >= 6) {
+//   if (password.indexOf(' ') === -1) {
+//     console.log('password valid');
+//   }else {
+//     console.log('password tidak boleh mengandung spasi');
+//   }
+// }else {
+//   console.log('password kurang dari 6');
+// }
+
+// if (password.length >= 6 && password.indexOf(' ') === -1) {
+//   console.log("password valid")
+// }else {
+//   console.log("password tidak boleh kurang dari 6 dan mengandung spasi")
+// }
+
+const role = prompt('masukan role');
+
+if (role === 'admin' || role === 'user') {
+  console.log('izin diterima');
 }else {
-  console.log('password kurang dari 6');
+  console.log('tidak memiliki izin');
 }
