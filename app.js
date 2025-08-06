@@ -62,10 +62,11 @@
 //   console.log("password tidak boleh kurang dari 6 dan mengandung spasi")
 // }
 
-const role = prompt('masukan role');
+const role = prompt("masukan role");
 
-if (role === 'admin' || role === 'user') {
-  console.log('izin diterima');
-}else {
-  console.log('tidak memiliki izin');
+if (role === "admin" || role === "user") {
+  console.log("izin diterima");
+} else {
+  console.log("tidak memiliki izin");
 }
+
